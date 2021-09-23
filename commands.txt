@@ -1,0 +1,52 @@
+Welcome to git.
+This is from branch mine.
+
+Information about github:-
+pull means to move code from github to our pc.
+push means to move code/files from our pc to github.
+
+cd /d //changes directory to d.
+pwd  //gives present working directory.
+ls  //gives list of folder.
+
+
+rm -rf .git   //removes whole repositary/folder.
+git init  //initialise folder as git repositary.
+git status    //tells status 
+git add --a   //adds all file of repositary/folder in staging area.
+git commit -m "statement"  //commits all file.
+git config User.name //gives user name which is set in git.
+git log  //gives all changes with time and date which are made in the file.
+
+//if u see this in git then use command rm -f .git/index.lock
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+
+git diff   //it compares working directory with staging area 1.
+git commit -a -m "line"  //this commits all tracked files skipping staging area.
+git rm filename  //removes file.
+git mv filename new_filename   //renames file
+git rm --cached filename  //untracks file.
+git log --stat   //gives brief changed info.
+git log -p -3  //prints 3 log
+git restore --staged filename //unstages file.
+git checkout -- filename   //delete/undo changes that we made in tht file before staging it(unmodifying).
+git checkout -f   //delete/undo changes that we made in all files i.e. in whole repositary before staging it(unmodifying).
+git config --global alias.shortname main_commandName  //configures command name as we want to use.
+ex. git config --global alias.st status  //after enter we can type git st instead of git status.
+ex. git config --global alias.last 'log -p -1'   //git last command made by us which gives last log history.
+
+git checkout -b newbranchname //makes a new branch and switch to that branch.
+git checkout branch_name //to switch branch.
+git branch -d branchname  //deletes branch if and only if it is merged.
+git branch -D branchname  //deletes branch.
+git branch  //gives name of all branches.
+
+git merge branchname  //merges branch with current branch(master).
+git branch --merged  //tells already merged branches.
+git branch --no -merged   //gives non merged branch names.
+git push  //push in the remote github.
+git remote  //prints all remote of that repository.
